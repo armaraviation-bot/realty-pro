@@ -58,6 +58,7 @@ Edit `scraper/hunter_settings.json`:
 
 ## Step 4: Run Manually
 
+### Option A: Direct (每次都爬)
 ```bash
 source venv/bin/activate
 
@@ -69,6 +70,15 @@ python3 property_hunter.py
 cd ../sheets
 python3 push_to_sheet.py
 ```
+
+### Option B: With Caching (默认-更快)
+```bash
+source venv/bin/activate
+cd sheets
+python3 mogul_runner.py
+```
+
+**Caching:** The runner checks if data was scraped in the last 24 hours. If yes, it uses cached data (instant). Only scrapes if cache is stale.
 
 ---
 
