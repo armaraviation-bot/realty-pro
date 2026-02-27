@@ -44,7 +44,7 @@ Edit `scraper/hunter_settings.json`:
 
 ```json
 {
-  "url": "https://www.srx.com.sg/search/sale/hdb/hougang",
+  "url": "https://www.srx.com.sg/search/sale/hdb/[town]",
   "max_price": 1000000,
   "keywords": ["executive", "maisonette"]
 }
